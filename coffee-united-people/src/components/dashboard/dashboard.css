@@ -1,0 +1,28 @@
+.dashboardBackground {
+  height: 100%;
+  background-color: #ffedd8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.meme {
+  background-color: #c38e70;
+  width: 550px;
+  height: 550px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  margin: 15px 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
+.user p {
+  margin-left: 15px;
+}

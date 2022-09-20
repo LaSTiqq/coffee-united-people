@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  border: 2px solid #000;
+  margin: 0 auto;
+}
+
+form input {
+  width: 350px;
+  height: 35px;
+  padding: 3px 7px;
+  border: transparent;
+  border-radius: 4px;
+  margin: 5px auto;
+}
+
+form img {
+  margin-bottom: 35px;
+}

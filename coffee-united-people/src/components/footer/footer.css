@@ -1,0 +1,35 @@
+footer {
+  height: 136px;
+  background-color: #432818;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  bottom: 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer p,
+footer h3 {
+  color: #f0ead2;
+}
+
+footer h3 {
+  font-weight: normal;
+}
+
+.footer-link {
+  text-align: center;
+  color: #ffe6a7;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 3px;
+}
+
+.footer-link:hover {
+  color: #935e38;
+  transition: 0.5s;
+}

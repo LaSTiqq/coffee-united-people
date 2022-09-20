@@ -1,0 +1,47 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  border: 2px solid #000;
+  margin: 0 auto;
+}
+
+form input {
+  width: 350px;
+  height: 35px;
+  padding: 3px 7px;
+  border: transparent;
+  border-radius: 4px;
+  margin: 5px auto;
+}
+
+form input[type="checkbox"] {
+  margin-top: 15px;
+}
+
+.wrapperRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperRegister p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.wrapperRegister p span {
+  color: #2fd9b9;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.wrapperRegister p span:hover {
+  color: #3dd5f3;
+  transition: 0.5s;
+}

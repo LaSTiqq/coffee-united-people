@@ -1,0 +1,73 @@
+.content {
+  background-image: url(../../asssets/coffee.jpg);
+  background-size: cover;
+  height: calc(100vh - 136px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1,
+.content h2,
+.content h4 {
+  color: #fff;
+  margin: 10px auto;
+}
+
+.content h1 {
+  font-size: 64px;
+  text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+}
+
+.content h2 {
+  font-size: 30px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.content h4 {
+  font-size: 22px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.content .btn {
+  display: inline-block;
+  background: #ffe6a7;
+  color: #352208;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.content .btn:hover {
+  background: #352208;
+  color: #ffe6a7;
+  transition: 0.5s;
+}
+
+.content p {
+  color: #fff;
+  font-size: 19px;
+  margin-top: 15px;
+}
+
+.content p span {
+  color: #2fd9b9;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.content p span:hover {
+  color: #3dd5f3;
+  transition: 0.5s;
+}
