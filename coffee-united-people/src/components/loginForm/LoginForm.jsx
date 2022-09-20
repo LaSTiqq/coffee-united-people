@@ -20,7 +20,7 @@ const LoginForm = ({ dashboard }) => {
     try {
       await axios.post("http://localhost:3001/login/", loginData);
     } catch (error) {
-      return console.error(error);
+      console.error(error);
     }
   };
 
