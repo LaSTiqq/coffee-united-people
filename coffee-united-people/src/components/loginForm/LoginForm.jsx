@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
-import axios from "axios";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { loggedInContext } from "../../utils/loggedInContext";
+import { useNavigate } from "react-router-dom";
 import coffee from "../../asssets/coffee.gif";
+import axios from "axios";
 import "./loginForm.css";
 
 const LoginForm = ({ dashboard }) => {
+  let navigate = useNavigate();
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
   });
 
+  const loginContext = useContext(loggedInContext);
   const handleLoginInput = (e) => {
     setLoginData((prev) => {
       return { ...prev, [e.target.name]: e.target.value };
@@ -18,7 +21,14 @@ const LoginForm = ({ dashboard }) => {
 
   const handleSubmit = async () => {
     try {
-      await axios.post("http://localhost:3001/login/", loginData);
+      const request = await axios.post(
+        "http://localhost:3001/login/",
+        loginData
+      );
+      if (request) {
+        loginContext.setLoggedInStatus(true);
+        navigate(`/${dashboard}`);
+      }
     } catch (error) {
       console.error(error);
     }
@@ -41,11 +51,9 @@ const LoginForm = ({ dashboard }) => {
           name="password"
           placeholder="Password"
         />
-        <Link to={`/${dashboard}`}>
-          <button onClick={handleSubmit} type="button" className="btn">
-            Log In
-          </button>
-        </Link>
+        <button onClick={handleSubmit} type="button" className="btn">
+          Log In
+        </button>
       </form>
     </div>
   );

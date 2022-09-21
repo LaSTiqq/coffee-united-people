@@ -1,8 +1,9 @@
 import Header from "../../components/header/Header";
-import Dashboard from "../../components/dashboard/Dashboard";
 import Sidebar from "../../components/sidebar/Sidebar";
+import Chat from "../../components/chat/Chat";
+import Footer from "../../components/footer/Footer";
 
-const DashboardPage = () => {
+const ChatPage = () => {
   return (
     <>
       <Header button={"dashboard"} />
@@ -10,11 +11,11 @@ const DashboardPage = () => {
         buttonDashboard={"dashboard"}
         buttonPeople={"people"}
         buttonChat={"chat"}
-        buttonLogout={"logout"}
       />
-      <Dashboard />
+      <Chat />
+      <Footer />
     </>
   );
 };
 
-export default DashboardPage;
+export default ChatPage;
