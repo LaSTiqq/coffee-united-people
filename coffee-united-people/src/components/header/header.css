@@ -34,3 +34,7 @@ header a {
 header img {
   cursor: pointer;
 }
+
+.wrapper :hover{
+  scale: 1.1;
+}

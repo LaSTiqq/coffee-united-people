@@ -32,4 +32,5 @@ footer h3 {
 .footer-link:hover {
   color: #935e38;
   transition: 0.5s;
+  scale: 1.1;
 }
