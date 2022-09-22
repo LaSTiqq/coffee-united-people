@@ -11,18 +11,17 @@ body {
 }
 
 .background {
-  height: calc(100vh - 136px);
+  height: calc(100vh - 128.5px);
   background-color: #ffedd8;
 }
 
 .background h1 {
   font-size: 56px;
   text-align: center;
-  margin: 88px 0;
-  padding: 50px 0 0 0;
+  padding-top: 3%;
 }
 
-.background .btn {
+.background .btnRegister {
   display: inline-block;
   background: #ffe6a7;
   color: #352208;
@@ -38,7 +37,7 @@ body {
   margin-top: 25px;
 }
 
-.background .btn:hover {
+.background .btnRegister:hover {
   background: #352208;
   color: #ffe6a7;
   transition: 0.5s;

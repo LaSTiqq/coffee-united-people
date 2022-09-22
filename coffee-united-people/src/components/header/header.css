@@ -16,21 +16,13 @@ nav a {
   text-decoration: none;
 }
 
-.wrapper {
+.headerWrapper {
   display: flex;
   flex-direction: column;
 }
 
-.wrapper,
-.wrapper p,
+.headerWrapper,
+.headerWrapper p,
 nav img {
   cursor: pointer;
-  transition: 0.5s;
-}
-
-.wrapper:hover,
-.wrapper p:hover,
-nav img:hover {
-  scale: 1.02;
-  transition: 0.5s;
 }

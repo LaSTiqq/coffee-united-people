@@ -15,34 +15,40 @@ const Sidebar = ({ buttonDashboard, buttonPeople, buttonChat }) => {
   };
 
   return (
-    <div className="sidebar">
-      <ul>
-        <span className="rectangle">
-          <Link to={`/${buttonDashboard}`}>
-            <img src={dashboard} alt="Dashboard" width="28" height="26" />
-            <li>Dashboard</li>
-          </Link>
-        </span>
-        <span className="rectangle">
-          <Link to={`/${buttonPeople}`}>
-            <img src={people} alt="Friends" width="28" height="26" />
-            <li>People</li>
-          </Link>
-        </span>
-        <span className="rectangle">
-          <Link to={`/${buttonChat}`}>
-            <img src={chat} alt="Chat" width="28" height="26" />
-            <li>Chat</li>
-          </Link>
-        </span>
-      </ul>
-      <hr />
-      <p className="logout" onClick={handleClick}>
-        Log Out
-      </p>
-      <div className="flex">
-        <p>Blog</p>
-        <p>Developer?</p>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-2">
+          <div className="sidebar">
+            <ul>
+              <span className="rectangle">
+                <Link to={`/${buttonDashboard}`}>
+                  <img src={dashboard} alt="Dashboard" width="28" height="26" />
+                  <li>Dashboard</li>
+                </Link>
+              </span>
+              <span className="rectangle">
+                <Link to={`/${buttonPeople}`}>
+                  <img src={people} alt="Friends" width="28" height="26" />
+                  <li>People</li>
+                </Link>
+              </span>
+              <span className="rectangle">
+                <Link to={`/${buttonChat}`}>
+                  <img src={chat} alt="Chat" width="28" height="26" />
+                  <li>Chat</li>
+                </Link>
+              </span>
+            </ul>
+            <hr />
+            <p className="logout mb-0" onClick={handleClick}>
+              Log Out
+            </p>
+            <div className="helpers d-flex justify-content-center mt-1">
+              <p className="me-3">Blog</p>
+              <p className="ms-3">Developer?</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -9,11 +9,9 @@ form {
   margin: 0 auto;
 }
 
-form input {
+.form-control {
   width: 350px;
   height: 35px;
-  padding: 3px 7px;
-  border: transparent;
   border-radius: 4px;
   margin: 5px auto;
 }

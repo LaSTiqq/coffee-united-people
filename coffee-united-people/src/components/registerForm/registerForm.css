@@ -1,25 +1,14 @@
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 400px;
   width: 600px;
   border: 2px solid #000;
-  margin: 0 auto;
 }
 
-form input {
+.form-control {
   width: 350px;
   height: 35px;
-  padding: 3px 7px;
-  border: transparent;
   border-radius: 4px;
   margin: 5px auto;
-}
-
-form input[type="checkbox"] {
-  margin-top: 15px;
 }
 
 .wrapperRegister {

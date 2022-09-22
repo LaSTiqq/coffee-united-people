@@ -6,7 +6,7 @@ const LoginPage = () => {
   return (
     <>
       <Header button={""} />
-      <LoginForm dashboard={"dashboard"} button={""} />
+      <LoginForm dashboard={"dashboard"} />
       <Footer />
     </>
   );
