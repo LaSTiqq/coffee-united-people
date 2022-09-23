@@ -1,6 +1,16 @@
+// import { useEffect, useContext } from "react";
+// import { loggedInContext } from "../../utils/loggedInContext";
+// import { useNavigate } from "react-router-dom";
 import "./chat.css";
 
 const Chat = () => {
+  // let navigate = useNavigate();
+  // const loginContext = useContext(loggedInContext);
+  // useEffect(() => {
+  //   if (!loginContext.isLoggedIn) {
+  //     navigate("/login");
+  //   }
+  // });
   return (
     <div className="container-fluid">
       <div className="row">
