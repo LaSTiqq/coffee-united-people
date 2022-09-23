@@ -70,25 +70,26 @@ hr {
   cursor: pointer;
 }
 
-
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1200px){
   .sidebar {
-    width: 150px;
-    height: 190px;
+    width: 170px;
   }
   .rectangle{
     margin: 2px 0 0 0;
   } 
 }
 
-@media screen and (max-width:768px) { 
+@media screen and (max-width: 992px){
   .sidebar {
-    width: 90px;
-    height: 190px;
-    
+    width: 85px;
   }
-  .rectangle li{
+  .rectangle li {
     display: none;
+  } 
+  .rectangle:hover{
+    width: 40px;
+    background-color: #6d4c3d;
+    scale: 1.1;
   }
   .ms-3{
     display: none;
