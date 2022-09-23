@@ -1,7 +1,17 @@
+// import { useEffect, useContext } from "react";
+// import { loggedInContext } from "../../utils/loggedInContext";
+// import { useNavigate } from "react-router-dom";
 import user from "../../asssets/user.png";
 import "./people.css";
 
 const People = () => {
+  // let navigate = useNavigate();
+  // const loginContext = useContext(loggedInContext);
+  // useEffect(() => {
+  //   if (!loginContext.isLoggedIn) {
+  //     navigate("/login");
+  //   }
+  // });
   return (
     <div className="container-fluid">
       <div className="row">
