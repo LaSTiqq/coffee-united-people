@@ -69,3 +69,28 @@ hr {
   text-decoration: underline;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 992px){
+  .sidebar {
+    width: 150px;
+    height: 190px;
+  }
+  .rectangle{
+    margin: 2px 0 0 0;
+  } 
+}
+
+@media screen and (max-width:768px) { 
+  .sidebar {
+    width: 90px;
+    height: 190px;
+    
+  }
+  .rectangle li{
+    display: none;
+  }
+  .ms-3{
+    display: none;
+  }
+}
