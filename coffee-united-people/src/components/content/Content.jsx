@@ -3,23 +3,25 @@ import "./content.css";
 
 const Content = ({ buttonRegister, buttonLogin }) => {
   return (
-    <div className="container-fluid g-0">
-      <div className="row g-0">
-        <div className="col-12">
-          <div className="content">
-            <h1>The CUP Social Media App</h1>
-            <h2>For those who are addicted or just love coffee</h2>
-            <h4>Search for friends, chat, post memes and more</h4>
-            <Link to={`/${buttonRegister}`}>
-              <button className="btn">Register!</button>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-12 content">
+          <h1 className="text-center">The CUP Social Media App</h1>
+          <h2 className="text-center">
+            For those who are addicted or just love coffee
+          </h2>
+          <h4 className="text-center">
+            Search for friends, chat, post memes and more
+          </h4>
+          <Link to={`/${buttonRegister}`}>
+            <button className="btnRegister d-block mx-auto">Register!</button>
+          </Link>
+          <p className="text-center">
+            Already have an account?&nbsp;
+            <Link to={`/${buttonLogin}`}>
+              <span>Sign in</span>
             </Link>
-            <p>
-              Already have an account?&nbsp;
-              <Link to={`/${buttonLogin}`}>
-                <span>Sign in</span>
-              </Link>
-            </p>
-          </div>
+          </p>
         </div>
       </div>
     </div>

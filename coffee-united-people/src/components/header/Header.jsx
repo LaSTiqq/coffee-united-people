@@ -10,7 +10,7 @@ const Header = ({ button }) => {
           <Link to={`/${button}`} className="navbar-brand">
             <img src={logo} alt="Logo" width="72" height="72" />
           </Link>
-          <div className="wrapper me-auto mt-3">
+          <div className="headerWrapper me-auto mt-3">
             <Link to={`/${button}`}>
               <h1 className="mb-0">CUP</h1>
               <p>Coffee United People</p>

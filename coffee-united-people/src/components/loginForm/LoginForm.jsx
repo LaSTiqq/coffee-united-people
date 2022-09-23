@@ -35,26 +35,40 @@ const LoginForm = ({ dashboard }) => {
   };
 
   return (
-    <div className="background">
-      <h1>Signing In Form</h1>
-      <form>
-        <img src={coffee} alt="Coffee GIF" width="64" height="64" />
-        <input
-          onChange={handleLoginInput}
-          type="email"
-          name="email"
-          placeholder="Email"
-        />
-        <input
-          onChange={handleLoginInput}
-          type="password"
-          name="password"
-          placeholder="Password"
-        />
-        <button onClick={handleSubmit} type="button" className="btn">
-          Log In
-        </button>
-      </form>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-12">
+          <div className="background d-flex flex-column justify-content-center">
+            <h1 className="mb-5">Signing In Form</h1>
+            <form>
+              <img src={coffee} alt="Coffee GIF" width="64" height="64" />
+              <input
+                className="form-control"
+                required
+                onChange={handleLoginInput}
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <input
+                className="form-control"
+                required
+                onChange={handleLoginInput}
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
+              <button
+                onClick={handleSubmit}
+                type="button"
+                className="btnRegister"
+              >
+                Log In
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
