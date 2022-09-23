@@ -60,6 +60,13 @@ hr {
   transition: 0.5s;
 }
 
+.helpers{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
 .helpers p {
   font-size: 14px;
   margin: 0 15px;
@@ -91,7 +98,7 @@ hr {
     background-color: #6d4c3d;
     scale: 1.1;
   }
-  .ms-3{
-    display: none;
+  .helpers{
+    flex-direction: column;
   }
 }
