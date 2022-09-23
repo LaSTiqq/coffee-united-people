@@ -26,3 +26,22 @@
 .user p {
   margin-left: 15px;
 }
+
+@media (max-width: 1200px){
+  .meme {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 992px) { 
+  .meme {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .meme{
+    width: 250px;
+  }
+}

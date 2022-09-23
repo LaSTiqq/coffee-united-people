@@ -76,3 +76,48 @@
   color: #3dd5f3;
   transition: 0.5s;
 }
+
+@media (max-width: 1200px){
+  .content h1 {
+    font-size: 50px;
+  }
+  .content h2 {
+    font-size: 25px;
+  }
+  .content h4 {
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) { 
+  .content h1 {
+    font-size: 40px;
+  }
+  .content h2 {
+    font-size: 23px;
+  }
+  .content h4 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .content h1 {
+    font-size: 35px;
+  }
+  .content h2 {
+    font-size: 20px;
+  }
+  .content h4 {
+    font-size: 16px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+}
