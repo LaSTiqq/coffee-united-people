@@ -16,8 +16,9 @@ const Chat = () => {
       <div className="row">
         <div className="col-md-12">
           <div className="chatBackground">
-            <h1 className="text-center">Chat</h1>
             <div className="box my-5">
+              <div className="box-header">Chat:</div>
+              <div className="box-body"></div>
               <div className="box-footer">
                 <input type="text" />
               </div>
