@@ -33,7 +33,9 @@ const LoginForm = () => {
       }
     } catch (error) {
       alert("Wrong email or password, press OK to try again");
-      navigate("/login");
+      Array.from(document.querySelectorAll("input")).forEach(
+        (input) => (input.value = "")
+      );
     }
   };
 
