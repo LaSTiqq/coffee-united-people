@@ -43,7 +43,7 @@ const Sidebar = ({ buttonDashboard, buttonPeople, buttonChat }) => {
             <p className="logout mb-0" onClick={handleClick}>
               Log Out
             </p>
-            <div className="helpers d-flex justify-content-center mt-1">
+            <div className="helpers mt-1">
               <p className="me-3">Blog</p>
               <p className="ms-3">Developer?</p>
             </div>

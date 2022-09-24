@@ -9,23 +9,30 @@
 }
 
 .chatBackground .box {
-  background-color: #fff;
+  background-color: #fcf0d1;
   width: 700px;
-  height: 700px;
+  height: 482px;
   border: 2px solid #000;
+  border-radius: 8px;
+  vertical-align: bottom;
 }
 
 .chatBackground .box .box-footer {
   position: absolute;
-  bottom: 15px;
+  bottom: 0px;
   background-color: #ccc;
   width: 696px;
   height: 30px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  vertical-align: bottom;
 }
 
 .chatBackground .box .box-footer input {
   width: 696px;
   height: 30px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 @media (max-width: 1200px){
