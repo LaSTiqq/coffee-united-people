@@ -10,7 +10,6 @@ const DashboardPage = () => {
         buttonDashboard={"dashboard"}
         buttonPeople={"people"}
         buttonChat={"chat"}
-        buttonLogout={"logout"}
       />
       <Dashboard />
     </>

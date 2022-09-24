@@ -13,11 +13,11 @@ const People = () => {
   //   }
   // });
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container-fluid gx-0">
+      <div className="row gx-0">
         <div className="col-md-12">
           <div className="peopleBackground">
-            <h1 className="text-center">People</h1>
+            <h1 className="text-center my-3">People</h1>
             <ul>
               <li>
                 <img src={user} alt="Default avatar" className="mt-3 me-4" />

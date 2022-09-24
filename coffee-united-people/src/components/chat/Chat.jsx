@@ -12,10 +12,11 @@ const Chat = () => {
   //   }
   // });
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container-fluid gx-0">
+      <div className="row gx-0">
         <div className="col-md-12">
           <div className="chatBackground">
+            <h1 className="text-center my-3">Chat</h1>
             <div className="box my-5">
               <div className="box-header">Chat:</div>
               <div className="box-body"></div>

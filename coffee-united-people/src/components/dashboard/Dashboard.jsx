@@ -20,19 +20,19 @@ const Dashboard = () => {
             <div className="meme">
               <div className="user">
                 <img src={user} alt="Default avatar" />
-                <p>Lorem User 1</p>
+                <p>Nickname 1</p>
               </div>
             </div>
             <div className="meme">
               <div className="user">
                 <img src={user} alt="Default avatar" />
-                <p>Lorem User 2</p>
+                <p>Nickname 2</p>
               </div>
             </div>
             <div className="meme">
               <div className="user">
                 <img src={user} alt="Default avatar" />
-                <p>Lorem User 3</p>
+                <p>Nickname 3</p>
               </div>
             </div>
           </div>
