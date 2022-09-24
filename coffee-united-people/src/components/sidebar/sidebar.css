@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: #c06e52;
+  background-color: #7d451b;
   height: 225px;
   width: 200px;
   position: absolute;
@@ -20,6 +20,7 @@
 
 .sidebar ul li {
   color: #2fd9b9;
+  font-size: 17px;
   margin-left: 35px;
   margin-top: -25px;
 }
@@ -60,6 +61,7 @@ hr {
 }
 
 .helpers {
+  color: #fff;
   display: flex;
   justify-content: center;
   flex-direction: row;

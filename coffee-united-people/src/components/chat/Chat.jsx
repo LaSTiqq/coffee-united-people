@@ -18,10 +18,10 @@ const Chat = () => {
           <div className="chatBackground">
             <h1 className="text-center fw-bold my-3">Chat</h1>
             <div className="box my-5">
-              <div className="box-header">Chat:</div>
+              <div className="box-header fw-bold">Chat:</div>
               <div className="box-body"></div>
               <div className="box-footer">
-                <input type="text" />
+                <input type="text" placeholder="Message..." />
               </div>
             </div>
           </div>

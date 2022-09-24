@@ -22,7 +22,7 @@
 .box-header {
   width: 696px;
   height: 30px;
-  background-color: #f7dad9;
+  background-color: #fcf6e6;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding-left: 10px;
@@ -32,12 +32,11 @@
 .box-body {
   width: 696px;
   height: 419px;
-  background-color: #fcf6e6;
+  background-color: #f7dad9;
   border-radius: 8px;
 }
 
 .box-footer {
-  background-color: #ccc;
   width: 697px;
   height: 30px;
   border-bottom-left-radius: 8px;
@@ -45,8 +44,10 @@
 }
 
 .box-footer input {
+  background-color: #ede0d4;
   width: 696px;
   height: 30px;
+  padding: 10px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
