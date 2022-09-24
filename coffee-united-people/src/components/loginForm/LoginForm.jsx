@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { loggedInContext } from "../../utils/loggedInContext";
+import { LoggedInContext } from "../../utils/LoggedInContext";
 import { useNavigate } from "react-router-dom";
 import coffee from "../../asssets/coffee.gif";
 import axios from "axios";
@@ -7,7 +7,7 @@ import "./loginForm.css";
 
 const LoginForm = () => {
   let navigate = useNavigate();
-  const loginContext = useContext(loggedInContext);
+  const LoginContext = useContext(LoggedInContext);
 
   const [loginData, setLoginData] = useState({
     email: "",
@@ -27,7 +27,7 @@ const LoginForm = () => {
         loginData
       );
       if (request) {
-        loginContext.setLoggedInStatus(true);
+        LoginContext.setLoggedInStatus(true);
         alert("Login success, press OK to continue");
         navigate("/dashboard");
       }

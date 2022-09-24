@@ -16,20 +16,20 @@
   border: 2px solid #000;
   border-radius: 8px;
   vertical-align: bottom;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.box-header{
+.box-header {
   width: 696px;
   height: 30px;
-  background-color: rgba(67, 40, 24, 0.9);
+  background-color: #f7dad9;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding-left: 10px;
-  color: #fcf0d1;
   font-size: 18px;
 }
 
-.box-body{
+.box-body {
   width: 696px;
   height: 419px;
   background-color: #fcf6e6;
@@ -51,8 +51,8 @@
   border-bottom-right-radius: 8px;
 }
 
-@media (max-width: 1200px){
-.box {
+@media (max-width: 1200px) {
+  .box {
     width: 500px;
   }
 
@@ -64,8 +64,8 @@
   }
 }
 
-@media (max-width: 992px) { 
-.box {
+@media (max-width: 992px) {
+  .box {
     width: 350px;
   }
 
@@ -77,15 +77,15 @@
   }
 }
 
-@media (max-width: 768px) { 
-.box{
+@media (max-width: 768px) {
+  .box {
     width: 250px;
   }
 
-.box-header,
-.box-body,
-.box-footer,
-.box-footer input {
+  .box-header,
+  .box-body,
+  .box-footer,
+  .box-footer input {
     width: 246px;
   }
 }

@@ -1,14 +1,14 @@
 // import { useEffect, useContext } from "react";
-// import { loggedInContext } from "../../utils/loggedInContext";
+// import { LoggedInContext } from "../../utils/LoggedInContext";
 // import { useNavigate } from "react-router-dom";
 import user from "../../asssets/user.png";
 import "./dashboard.css";
 
 const Dashboard = () => {
   // let navigate = useNavigate();
-  // const loginContext = useContext(loggedInContext);
+  // const LoginContext = useContext(LoggedInContext);
   // useEffect(() => {
-  //   if (!loginContext.isLoggedIn) {
+  //   if (!LoginContext.isLoggedIn) {
   //     navigate("/login");
   //   }
   // });

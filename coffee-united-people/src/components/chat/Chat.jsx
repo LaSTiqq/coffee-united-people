@@ -1,13 +1,13 @@
 // import { useEffect, useContext } from "react";
-// import { loggedInContext } from "../../utils/loggedInContext";
+// import { LoggedInContext } from "../../utils/LoggedInContext";
 // import { useNavigate } from "react-router-dom";
 import "./chat.css";
 
 const Chat = () => {
   // let navigate = useNavigate();
-  // const loginContext = useContext(loggedInContext);
+  // const LoginContext = useContext(LoggedInContext);
   // useEffect(() => {
-  //   if (!loginContext.isLoggedIn) {
+  //   if (!LoginContext.isLoggedIn) {
   //     navigate("/login");
   //   }
   // });
@@ -16,7 +16,7 @@ const Chat = () => {
       <div className="row gx-0">
         <div className="col-md-12">
           <div className="chatBackground">
-            <h1 className="text-center my-3">Chat</h1>
+            <h1 className="text-center fw-bold my-3">Chat</h1>
             <div className="box my-5">
               <div className="box-header">Chat:</div>
               <div className="box-body"></div>

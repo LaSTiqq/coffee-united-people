@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LoggedInContextProvider from "./utils/loggedInContext";
+import LoggedInContextProvider from "./utils/LoggedInContext";
 import MainPage from "./pages/mainPage/MainPage";
 import RegisterPage from "./pages/registerPage/RegisterPage";
 import LoginPage from "./pages/loginPage/LoginPage";

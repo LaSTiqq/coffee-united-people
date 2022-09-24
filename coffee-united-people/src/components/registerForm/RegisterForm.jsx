@@ -32,6 +32,7 @@ const RegisterForm = () => {
       alert(
         "User with that nickname or email already exists, press OK to try again"
       );
+      navigate("/register");
     }
   };
   return (
