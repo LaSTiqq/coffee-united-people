@@ -2,7 +2,7 @@
   background-color: #6d4c3d;
   height: 225px;
   width: 200px;
-  position: absolute;
+  position: fixed;
   margin-top: 138px;
   border-radius: 4px;
   z-index: 1;
