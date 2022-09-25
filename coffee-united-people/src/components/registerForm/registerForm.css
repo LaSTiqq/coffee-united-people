@@ -38,3 +38,9 @@ form {
 .background h1 {
 font-size: 30px;
 }
+
+@media (min-width: 1400px) {
+  .background h1 {
+    font-size: 34px;
+    }
+}

@@ -1,4 +1,5 @@
 import "./footer.css";
+import cat from "../../asssets/cat.png";
 
 const Footer = () => {
   return (
@@ -6,6 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-4">
+            <img src={cat} alt="Cat" className="cat" />
             <h3 className="text-center mb-0">Made by: Kia & Lauris</h3>
           </div>
           <div className="col-md-4">
