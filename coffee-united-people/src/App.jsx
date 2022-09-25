@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LoggedInContextProvider from "./utils/LoggedInContext";
-import MainPage from "./pages/mainPage/MainPage";
-import RegisterPage from "./pages/registerPage/RegisterPage";
-import LoginPage from "./pages/loginPage/LoginPage";
-import DashboardPage from "./pages/dashboardPage/DashboardPage";
-import PeoplePage from "./pages/peoplePage/PeoplePage";
-import ChatPage from "./pages/chatPage/ChatPage";
+import LoggedInContextProvider from "./utils/loggedInContext.jsx";
+import MainPage from "./pages/mainPage/MainPage.jsx";
+import RegisterPage from "./pages/registerPage/RegisterPage.jsx";
+import LoginPage from "./pages/loginPage/LoginPage.jsx";
+import DashboardPage from "./pages/dashboardPage/DashboardPage.jsx";
+import PeoplePage from "./pages/peoplePage/PeoplePage.jsx";
+import ChatPage from "./pages/chatPage/ChatPage.jsx";
 
 function App() {
   return (
