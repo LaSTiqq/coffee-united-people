@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { loggedInContext } from "../../utils/loggedInContext";
+import { loggedInContext } from "../../utils/loggedInContext.jsx";
 import { useContext } from "react";
 import dashboard from "../../asssets/dashboard.png";
 import people from "../../asssets/people.png";
