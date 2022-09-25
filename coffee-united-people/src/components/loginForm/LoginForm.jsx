@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { LoggedInContext } from "../../utils/loggedInContext.jsx";
+import { LoggedInContext } from "../../utils/LoggedInContext";
 import { useNavigate } from "react-router-dom";
 import coffee from "../../asssets/coffee.gif";
 import axios from "axios";
