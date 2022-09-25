@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { loggedInContext } from "../../utils/loggedInContext.jsx";
+import { LoggedInContext } from "../../utils/loggedInContext.jsx";
 import { useContext } from "react";
 import dashboard from "../../asssets/dashboard.png";
 import people from "../../asssets/people.png";
@@ -8,9 +8,9 @@ import "./sidebar.css";
 
 const Sidebar = ({ buttonDashboard, buttonPeople, buttonChat }) => {
   const navigate = useNavigate();
-  const logout = useContext(loggedInContext);
+  const Logout = useContext(LoggedInContext);
   const handleClick = () => {
-    logout.setLoggedInStatus(false);
+    Logout.setLoggedInStatus(false);
     navigate("/");
   };
 

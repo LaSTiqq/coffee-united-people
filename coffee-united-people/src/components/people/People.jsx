@@ -1,67 +1,59 @@
 // import { useEffect, useContext } from "react";
-// import { loggedInContext } from "../../utils/loggedInContext";
+// import { LoggedInContext } from "../../utils/LoggedInContext";
 // import { useNavigate } from "react-router-dom";
-import user from "../../asssets/user.png";
+import CustomGetHook from "../../utils/CustomGetHook";
+import userLogo from "../../asssets/user.png";
 import "./people.css";
 
 const People = () => {
   // let navigate = useNavigate();
-  // const loginContext = useContext(loggedInContext);
+  // const LoginContext = useContext(LoggedInContext);
   // useEffect(() => {
-  //   if (!loginContext.isLoggedIn) {
+  //   if (!LoginContext.isLoggedIn) {
   //     navigate("/login");
   //   }
   // });
+  const { dataState } = CustomGetHook("http://localhost:3001/get");
+
+  const displayUsers = () => {
+    return (
+      <>
+        {dataState?.map((user) => {
+          return (
+            <li key={user._id} className="my-2">
+              <div className="wrapperPeople text-center">
+                <img
+                  src={userLogo}
+                  alt="Default avatar"
+                  className="me-2 my-2"
+                />
+                <span className="me-2 fw-bold">Nickname:</span>
+                <span>{`${user.nickname}`}&nbsp;|&nbsp;</span>
+                <span className="me-2 fw-bold">Email:</span>
+                <span>{`${user.email}`}</span>
+                <div className="d-flex justify-content-evenly">
+                  <p className="text-center text-success mb-2 fw-bold">
+                    Add as friend
+                  </p>
+                  <p className="text-center text-primary mb-2 fw-bold">
+                    Send a message
+                  </p>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </>
+    );
+  };
+
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container-fluid gx-0">
+      <div className="row gx-0">
         <div className="col-md-12">
           <div className="peopleBackground">
-            <h1 className="text-center">People</h1>
-            <ul>
-              <li>
-                <img src={user} alt="Default avatar" className="mt-3 me-4" />
-                Nickname 1
-                <p className="text-center text-success mt-2 fw-bold">
-                  Add as friend
-                </p>
-              </li>
-              <li>
-                <img src={user} alt="Default avatar" className="mt-3 me-4" />
-                Nickname 2
-                <p className="text-center text-success mt-2 fw-bold">
-                  Add as friend
-                </p>
-              </li>
-              <li>
-                <img src={user} alt="Default avatar" className="mt-3 me-4" />
-                Nickname 3
-                <p className="text-center text-danger mt-2 fw-bold">
-                  Delete from friend list
-                </p>
-              </li>
-              <li>
-                <img src={user} alt="Default avatar" className="mt-3 me-4" />
-                Nickname 4
-                <p className="text-center text-danger mt-2 fw-bold">
-                  Delete from friend list
-                </p>
-              </li>
-              <li>
-                <img src={user} alt="Default avatar" className="mt-3 me-4" />
-                Nickname 5
-                <p className="text-center text-success mt-2 fw-bold">
-                  Add as friend
-                </p>
-              </li>
-              <li>
-                <img src={user} alt="Default avatar" className="mt-3 me-4" />
-                Nickname 6
-                <p className="text-center text-danger mt-2 fw-bold">
-                  Delete from friend list
-                </p>
-              </li>
-            </ul>
+            <h1 className="text-center fw-bold my-3">Registered people list</h1>
+            <ul className="d-flex flex-column">{displayUsers()}</ul>
           </div>
         </div>
       </div>

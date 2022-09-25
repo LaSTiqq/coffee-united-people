@@ -16,3 +16,12 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+.wrapperPeople {
+  background-color: #f7dad9;
+  width: 550px;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

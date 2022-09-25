@@ -16,6 +16,10 @@ nav a {
   text-decoration: none;
 }
 
+.navbar-brand {
+  margin-right: 0;
+}
+
 .headerWrapper {
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-export const loggedInContext = createContext({
+export const LoggedInContext = createContext({
   isLoggedIn: false,
   setLoggedInStatus: (status) => {},
 });
@@ -11,9 +11,9 @@ const LoggedInContextProvider = (props) => {
   };
   const contextValue = { isloggedIn: loggedIn, setLoggedInStatus };
   return (
-    <loggedInContext.Provider value={contextValue}>
+    <LoggedInContext.Provider value={contextValue}>
       {props.children}
-    </loggedInContext.Provider>
+    </LoggedInContext.Provider>
   );
 };
 
