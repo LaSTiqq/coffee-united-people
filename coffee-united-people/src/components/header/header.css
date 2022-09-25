@@ -30,3 +30,29 @@ nav a {
 nav img {
   cursor: pointer;
 }
+
+.container img {
+  width: 72px;
+  height: 72px;
+}
+
+@media (max-width: 1200px){
+  .container img {
+    width: 69px;
+    height: 69px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container img {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container img {
+    width: 63px;
+    height: 63px;
+  }
+}

@@ -8,7 +8,7 @@ const Header = ({ button }) => {
       <nav className="navbar fixed-top">
         <div className="container">
           <Link to={`/${button}`} className="navbar-brand">
-            <img src={logo} alt="Logo" width="72" height="72" />
+            <img src={logo} alt="Logo" />
           </Link>
           <div className="headerWrapper me-auto mt-3">
             <Link to={`/${button}`}>

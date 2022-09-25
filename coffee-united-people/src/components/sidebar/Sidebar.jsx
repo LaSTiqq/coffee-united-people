@@ -22,19 +22,19 @@ const Sidebar = ({ buttonDashboard, buttonPeople, buttonChat }) => {
             <ul>
               <span className="rectangle">
                 <Link to={`/${buttonDashboard}`}>
-                  <img src={dashboard} alt="Dashboard" width="28" height="26" />
+                  <img src={dashboard} alt="Dashboard" />
                   <li>Dashboard</li>
                 </Link>
               </span>
               <span className="rectangle">
                 <Link to={`/${buttonPeople}`}>
-                  <img src={people} alt="Friends" width="28" height="26" />
+                  <img src={people} alt="Friends" />
                   <li>People</li>
                 </Link>
               </span>
               <span className="rectangle">
                 <Link to={`/${buttonChat}`}>
-                  <img src={chat} alt="Chat" width="28" height="26" />
+                  <img src={chat} alt="Chat" />
                   <li>Chat</li>
                 </Link>
               </span>
