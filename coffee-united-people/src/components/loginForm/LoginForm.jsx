@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { LoggedInContext } from "../../utils/loggedInContext.jsx";
+import { LoggedInContext } from "../../utils/LoggedInContext";
 import { useNavigate } from "react-router-dom";
 import coffee from "../../asssets/coffee.gif";
 import axios from "axios";
@@ -40,11 +40,11 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="container-fluid">
-      <div className="row">
+    <div className="container-fluid gx-0">
+      <div className="row gx-0">
         <div className="col-md-12">
           <div className="background d-flex flex-column justify-content-center">
-            <h2 className="mb-5">Signing In Form</h2>
+            <h1 className="text-center mt-2 mb-4">Signing In Form</h1>
             <form onSubmit={handleSubmit}>
               <img src={coffee} alt="Coffee GIF" />
               <input

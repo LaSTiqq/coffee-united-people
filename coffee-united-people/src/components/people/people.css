@@ -12,6 +12,10 @@
   list-style: none;
 }
 
+.peopleBackground ul li a {
+  text-decoration: none;
+}
+
 .peopleBackground ul li p:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -30,18 +34,11 @@
   .wrapperPeople {
     width: 500px;
   }
-  .peopleBackground h1 {
-    font-size: 35px;
-  }
-  .text-center{
-    font-size: 16px;
-  }
   .wrapperPeople img {
     height: 2.5rem;
   }
   .me-2,
-  .wrapperPeople span,
-  .text-center {
+  .wrapperPeople span {
     font-size: 14px;
   }
 }
@@ -50,15 +47,11 @@
   .wrapperPeople {
     width: 350px;
   }
-  .peopleBackground h1 {
-    font-size: 27px;
-  }
   .wrapperPeople img {
     height: 2rem;
   }
   .me-2,
-  .wrapperPeople span,
-  .text-center {
+  .wrapperPeople span {
     font-size: 13px;
   }
 }
@@ -67,15 +60,11 @@
   .wrapperPeople {
     width: 250px;
   }
-  .peopleBackground h1 {
-    font-size: 20px;
-  }
   .wrapperPeople img {
     height: 1.5rem;
   }
   .me-2,
-  .wrapperPeople span,
-  .text-center {
+  .wrapperPeople span {
     font-size: 12px;
   }
 }

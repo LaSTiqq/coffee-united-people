@@ -18,13 +18,14 @@
   flex-direction: column;
   list-style: none;
   margin-top: 10px;
+  padding-left: 25px;
 }
 
 .sidebar ul li {
   color: #2fd9b9;
   font-size: 17px;
-  margin-left: 35px;
-  margin-top: -25px;
+  margin-left: 39px;
+  margin-top: -28px;
 }
 
 .sidebar a {
@@ -47,7 +48,6 @@
 .rectangle li {
   width: 10px;
   height: 10px;
-
 }
 
 hr {
