@@ -44,9 +44,9 @@ const LoginForm = () => {
       <div className="row">
         <div className="col-md-12">
           <div className="background d-flex flex-column justify-content-center">
-            <h1 className="mb-5">Signing In Form</h1>
+            <h2 className="mb-5">Signing In Form</h2>
             <form onSubmit={handleSubmit}>
-              <img src={coffee} alt="Coffee GIF" width="64" height="64" />
+              <img src={coffee} alt="Coffee GIF" />
               <input
                 className="form-control"
                 required

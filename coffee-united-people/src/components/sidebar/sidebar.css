@@ -9,6 +9,8 @@
 
 .sidebar img {
   margin-top: 3px;
+  width: 31px;
+  height: 31px;
 }
 
 .sidebar ul {
@@ -40,6 +42,12 @@
   background-color: #a98467;
   cursor: pointer;
   scale: 1.05;
+}
+
+.rectangle li {
+  width: 10px;
+  height: 10px;
+
 }
 
 hr {
