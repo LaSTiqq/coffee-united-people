@@ -34,3 +34,7 @@ form {
   color: #3dd5f3;
   transition: 0.5s;
 }
+
+.background h1 {
+font-size: 30px;
+}
