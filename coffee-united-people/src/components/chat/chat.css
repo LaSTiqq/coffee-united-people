@@ -33,14 +33,12 @@
   width: 696px;
   height: 419px;
   background-color: #f7dad9;
-  border-radius: 8px;
 }
 
 .box-footer {
   width: 697px;
   height: 30px;
   border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
 
 .box-footer input {
@@ -49,12 +47,32 @@
   height: 30px;
   padding: 10px;
   border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   margin-top: -0.25px;
 }
 
 .chatBackground h1 {
   font-size: 28px;
+}
+
+@media (min-width: 1400px) {
+  .chatBackground h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .box {
+    width: 600px;
+  }
+
+  .box-header,
+  .box-body,
+  .box-footer {
+    width: 596px;
+  }
+  .box-footer input {
+    width: 588px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -68,21 +86,24 @@
     width: 496px;
   }
   .box-footer input {
-    width: 486px;
+    width: 490px;
+  }
+  .chatBackground h1 {
+    display: none;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 998px) {
   .box {
-    width: 350px;
+    width: 400px;
   }
   .box-header,
   .box-body,
   .box-footer {
-    width: 346px;
+    width: 396px;
   }
   .box-footer input {
-    width: 336px;
+    width: 390px;
   }
 }
 
