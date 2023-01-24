@@ -6,13 +6,11 @@ export const LoggedInContext = createContext({
 });
 const LoggedInContextProvider = (props) => {
   const [loggedIn, setLoggedIn] = useState(false);
-  const setLoggedInStatus = (status) => {
-    setLoggedIn(status);
-  };
-  const contextValue = { isloggedIn: loggedIn, setLoggedInStatus };
+  const setLoggedInStatus = setLoggedIn;
+  const contextValue = { isLoggedIn: loggedIn, setLoggedInStatus };
   return (
     <LoggedInContext.Provider value={contextValue}>
-      {props.children}
+      <div>{props.children}</div>
     </LoggedInContext.Provider>
   );
 };

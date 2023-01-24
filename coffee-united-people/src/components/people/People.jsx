@@ -1,19 +1,19 @@
-// import { useEffect, useContext } from "react";
-// import { LoggedInContext } from "../../utils/LoggedInContext";
-// import { useNavigate } from "react-router-dom";
+import { useEffect, useContext } from "react";
+import { LoggedInContext } from "../../utils/LoggedInContext";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import CustomGetHook from "../../utils/CustomGetHook";
 import userLogo from "../../asssets/user.png";
 import "./people.css";
 
 const People = () => {
-  // let navigate = useNavigate();
-  // const LoginContext = useContext(LoggedInContext);
-  // useEffect(() => {
-  //   if (!LoginContext.isLoggedIn) {
-  //     navigate("/login");
-  //   }
-  // });
+  let navigate = useNavigate();
+  const LoginContext = useContext(LoggedInContext);
+  useEffect(() => {
+    if (!LoginContext.isLoggedIn) {
+      navigate("/login");
+    }
+  });
   const { dataState } = CustomGetHook("http://localhost:3001/get");
 
   const displayUsers = () => {

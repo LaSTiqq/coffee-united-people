@@ -1,6 +1,6 @@
-// import { LoggedInContext } from "../../utils/LoggedInContext";
-// import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { LoggedInContext } from "../../utils/LoggedInContext";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState, useContext } from "react";
 import { io } from "socket.io-client";
 import "./chat.css";
 
@@ -9,13 +9,13 @@ const socket = io("http://localhost:3002", {
 });
 
 const Chat = () => {
-  // let navigate = useNavigate();
-  // const LoginContext = useContext(LoggedInContext);
-  // useEffect(() => {
-  //   if (!LoginContext.isLoggedIn) {
-  //     navigate("/login");
-  //   }
-  // });
+  let navigate = useNavigate();
+  const LoginContext = useContext(LoggedInContext);
+  useEffect(() => {
+    if (!LoginContext.isLoggedIn) {
+      navigate("/login");
+    }
+  });
   const [message, setMessage] = useState("");
   const [messageReceived, setMessageReceived] = useState("");
   const sendMessage = () => {

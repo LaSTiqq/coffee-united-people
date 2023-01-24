@@ -1,6 +1,6 @@
-// import { useEffect, useContext } from "react";
-// import { LoggedInContext } from "../../utils/LoggedInContext";
-// import { useNavigate } from "react-router-dom";
+import { useEffect, useContext } from "react";
+import { LoggedInContext } from "../../utils/LoggedInContext";
+import { useNavigate } from "react-router-dom";
 import userLogo from "../../asssets/user.png";
 import like from "../../asssets/like.png";
 import meme1 from "../../asssets/meme1.jpg";
@@ -9,13 +9,13 @@ import meme3 from "../../asssets/meme3.jpg";
 import "./dashboard.css";
 
 const Dashboard = () => {
-  // let navigate = useNavigate();
-  // const LoginContext = useContext(LoggedInContext);
-  // useEffect(() => {
-  //   if (!LoginContext.isLoggedIn) {
-  //     navigate("/login");
-  //   }
-  // });
+  let navigate = useNavigate();
+  const LoginContext = useContext(LoggedInContext);
+  useEffect(() => {
+    if (!LoginContext.isLoggedIn) {
+      navigate("/login");
+    }
+  });
   return (
     <div className="container-fluid gx-0">
       <div className="row gx-0">
