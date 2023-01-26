@@ -4,7 +4,7 @@ import { useEffect, useState, useContext } from "react";
 import { io } from "socket.io-client";
 import "./chat.css";
 
-const socket = io("http://localhost:3002", {
+const socket = io("http://localhost:3001", {
   path: "/chat/",
 });
 

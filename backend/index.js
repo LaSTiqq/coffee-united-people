@@ -8,7 +8,8 @@ import getAllRoute from "./routes/getAllRoute.js";
 import { createServer } from "http";
 import { Server } from "socket.io";
 
-const server = createServer();
+const app = express();
+const server = createServer(app);
 
 const io = new Server(server, {
   path: "/chat/",
@@ -26,7 +27,6 @@ io.on("connection", (socket) => {
 
 dotenv.config();
 
-const app = express();
 app.use(express.json());
 app.use(cors());
 app.use("/login", loginRoute);
@@ -42,8 +42,4 @@ const connection = async () => {
   }
 };
 
-app.listen(3001, () => connection());
-
-server.listen(3002, () => {
-  console.log("Chat is running");
-});
+server.listen(3001, () => connection());
